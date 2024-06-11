@@ -20,6 +20,7 @@ body.green {
     font-size: 150px;
     /* font-size: 70px !important; */
     width: 100% !important;
+    max-width: 100% !important;
     aspect-ratio: 1;
     height: auto;
     padding: 0;
@@ -29,6 +30,10 @@ body.green {
     /* height: 90vh; */
     height: 85vh;
     margin-top: 10%;
+  }
+
+  #textFitted {
+    width: 100%;
   }
 
   .green div#memeContainer {
@@ -283,6 +288,7 @@ body.green #main-wrapper {
   width: 600px;
   max-height: 600px;
   z-index: 99;
+  object-fit: contain;
 }
 
 #textInput {

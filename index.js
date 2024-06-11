@@ -8,18 +8,9 @@ textInput.addEventListener('input', function () {
   const fryLevel = document.getElementById('friedLevel').value;
   const text = this.value;
   textOverlay.innerText = text;
-  if (text.length < 20) {
-    textOverlay.style.textAlign = 'center';
-    textOverlay.style.textAlignLast = 'auto';
-    textOverlay.style.display = 'flex';
-    textOverlay.style.justifyContent = 'center';
-    textOverlay.style.alignItems = 'center';
-  } else {
-    textOverlay.style.textAlign = 'justify';
-    textOverlay.style.textAlignLast = 'justify';
-    textOverlay.style.display = 'block';
-    textFit(textOverlay, { maxFontSize: 170 });
-  }
+  textOverlay.style.textAlign = 'justify';
+  textOverlay.style.textAlignLast = 'justify';
+  textFit(textOverlay, { maxFontSize: 170 });
   // memeImage.style.display = 'none';
   downloadImg(1 - fryLevel / 100);
 });

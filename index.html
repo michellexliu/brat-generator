@@ -25,6 +25,15 @@
       </div>
     </div>
     <style>
+      @font-face {
+        font-family: 'arial_narrowregular';
+        src: url('arrialnarrow.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Arial Narrow';
+        src: url('arrialnarrow.ttf') format('truetype');
+      }
+
       body.green #textInput {
         border-width: 0px;
       }
@@ -46,7 +55,6 @@
         z-index: 2;
         color: #000000;
         font-weight: 500;
-        font-family: 'Archivo Narrow', sans-serif;
         font-family: arial_narrowregular, 'Arial Narrow', sans-serif;
         font-size: 280px;
         /* filter: blur(2px); */
@@ -55,13 +63,16 @@
         text-align-last: justify;
         height: 500px;
         padding: 0px !important;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       div#textOverlay span.textFitted {
         font-weight: 500;
         font-family: arial_narrowregular, 'Arial Narrow', sans-serif;
         font-size: 100px;
-        filter: blur(10px) !important;
       }
     </style>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
