@@ -1,0 +1,320 @@
+.block.block-layout-builder.block-extra-field-blocknodepagecontent-moderation-control {
+  display: none;
+}
+
+/*Default Theme */
+body {
+  background-color: #fff;
+}
+
+body #textInput {
+  border: 1px solid #d1d1d1;
+}
+
+body.green {
+  background-color: #8acf00;
+}
+
+@media only screen and (max-width: 1023px) {
+  #textOverlay {
+    font-size: 150px;
+    /* font-size: 70px !important; */
+    width: 100% !important;
+    aspect-ratio: 1;
+    height: auto;
+    padding: 0;
+  }
+
+  #memeContainer {
+    /* height: 90vh; */
+    height: 85vh;
+    margin-top: 10%;
+  }
+
+  .green div#memeContainer {
+    min-height: 85vh;
+    height: auto;
+  }
+  #memeImage {
+    width: 100% !important;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.block .content {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a.link {
+  border: 0;
+}
+
+.main-content .section {
+  padding: 0;
+}
+
+.node__content {
+  margin: 0;
+}
+
+.layout-main {
+  margin: 0;
+}
+
+.layout-main-wrapper {
+  min-height: auto;
+  max-width: 100%;
+}
+
+.site-footer .layout-container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.site-footer__bottom {
+  margin: 0;
+  border: 0;
+  letter-spacing: 0;
+}
+
+.site-footer__bottom .region {
+  padding: 0;
+  margin: 0;
+}
+
+.site-footer__bottom .block {
+  margin: 0;
+}
+
+footer.site-footer {
+  padding: 0;
+}
+
+.skip-link {
+  display: none;
+}
+
+html body {
+  /* font-size: 0; */
+  line-height: 1;
+  min-height: auto;
+}
+
+nav#toolbar-bar,
+nav.toolbar-lining {
+  display: none;
+}
+
+#toolbar-bar {
+  display: none !important;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/*Default Theme */
+body {
+  background-color: #fff;
+}
+
+body #textInput {
+  border: 1px solid #d1d1d1;
+}
+
+#textOverlay {
+  font-size: 100px;
+  max-width: 500px;
+  text-align: justify;
+  text-align-last: justify;
+  padding: 20px;
+  height: 500px;
+  position: absolute;
+  top: -9000px;
+}
+div#textOverlay span.textFitted {
+  font-weight: 500;
+  font-family: arial_narrowregular, 'Arial Narrow', sans-serif;
+  font-size: 100px;
+  filter: blur(2px);
+}
+
+.footerWrapper > div.copyrightWrapper {
+  font-size: 0.833333vw;
+  font-size: 14px;
+  font-family: 'timesregular';
+  margin: 1vw auto;
+}
+
+.footerWrapper .copyrightLinks {
+  width: 150px;
+  margin: 0 auto 20px;
+}
+
+.footerWrapper .copyrightLinks a {
+  font-size: 0.833333vw;
+  font-size: 14px;
+  color: #000000;
+  font-family: 'timesregular';
+  line-height: 1.5;
+  transition: all 0.5s ease-in-out;
+}
+
+.footerWrapper .copyrightLinks a:hover {
+  opacity: 0.5;
+}
+
+.footerWrapper .copyrightLinks div.otCookielink {
+  margin: 1vw auto;
+}
+
+.copyrightLinks {
+  width: 150px;
+  margin: 0 auto 10px;
+}
+
+.socialWrapper.active {
+  font-size: 0;
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape),
+  only screen and (max-width: 1024px) and (orientation: portrait) {
+  .logo.position-center-screen {
+    width: 48.372093vw;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .popUpOpener > div > div,
+  .popUpWrapper .socialWrapper ul.socials li a,
+  .footerWrapper > div.copyrightWrapper,
+  .footerWrapper .copyrightLinks a {
+    font-size: 3.72093vw;
+    font-size: 14px;
+  }
+
+  .footerWrapper {
+    width: 53.953488vw;
+    width: 100%;
+  }
+}
+
+#toggleButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 51;
+}
+
+#submitButton {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  z-index: 51;
+}
+
+/*Green Theme */
+body.green #textInput {
+  border-width: 0px;
+}
+
+body.green #page,
+body.green #main-wrapper {
+  background-color: #8acf00;
+}
+
+@media only screen and (max-width: 1023px) {
+  #memeContainer {
+    /* height: 90vh; */
+    height: 85vh;
+    margin-top: 10%;
+  }
+
+  .green div#memeContainer {
+    min-height: 85vh;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape),
+  only screen and (max-width: 1024px) and (orientation: portrait) {
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
+  .green div#memeContainer {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+#page,
+#main-wrapper {
+  overflow: hidden;
+}
+
+#memeContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 80vh;
+  margin-top: 0;
+  font-size: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#memeImage {
+  width: 600px;
+  max-height: 600px;
+  z-index: 99;
+}
+
+#textInput {
+  margin: 14px auto;
+  padding: 0;
+  font-size: 18px;
+  border-width: 0px;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 90%;
+  display: block;
+  font-family: 'timesregular', serif;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  outline: none;
+  position: relative;
+  z-index: 50;
+}
+
+#saveBtn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#screenshot-blurb {
+  font-size: 14px;
+  font-family: 'timesregular', serif;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}

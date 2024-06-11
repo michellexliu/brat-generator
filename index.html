@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>Brat generator but slightly better</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-wrapper">
+      <div id="content">
+        <div id="memeContainer">
+          <img id="memeImage" src="brat.png" alt="Meme Image" />
+          <div id="textOverlay"></div>
+        </div>
+        <input type="text" id="textInput" value="brat" />
+        <label for="friedLevel">Fried level</label>
+        <input
+          type="range"
+          min="1"
+          max="99"
+          value="80"
+          class="slider"
+          id="friedLevel"
+        />
+        <div id="toggleButton" onclick="toggleColor()"></div>
+      </div>
+    </div>
+    <style>
+      body.green #textInput {
+        border-width: 0px;
+      }
+
+      body.green #page,
+      body.green #main-wrapper,
+      body.green #textOverlay {
+        background-color: #8acf00;
+      }
+
+      #memeImage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #textOverlay {
+        z-index: 2;
+        color: #000000;
+        font-weight: 500;
+        font-family: 'Archivo Narrow', sans-serif;
+        font-family: arial_narrowregular, 'Arial Narrow', sans-serif;
+        font-size: 280px;
+        /* filter: blur(2px); */
+        font-size: 100px;
+        text-align: justify;
+        text-align-last: justify;
+        height: 500px;
+        padding: 0px !important;
+      }
+
+      div#textOverlay span.textFitted {
+        font-weight: 500;
+        font-family: arial_narrowregular, 'Arial Narrow', sans-serif;
+        font-size: 100px;
+        filter: blur(10px) !important;
+      }
+    </style>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://libraries.wmgartistservices.com/jslibrary/jquery.min.js"></script>
+    <script src="textFit.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
